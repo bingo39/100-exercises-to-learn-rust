@@ -3,7 +3,7 @@ pub fn factorial(n: u32) -> u32 {
     for i in 1..=n {
         // Use saturating multiplication to stop at the maximum value of u32
         // rather than overflowing and wrapping around
-        result *= i;
+         result = i.saturating_mul(result)
     }
     result
 }
@@ -15,6 +15,7 @@ mod tests {
     #[test]
     fn twentieth() {
         assert_eq!(factorial(20), u32::MAX);
+        // ‵ＭＡＸ‵是u32类型定义上的一个固定值（关联常量）【即u32::MAX = 4294,967,295】
     }
 
     #[test]

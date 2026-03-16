@@ -1,6 +1,16 @@
 // Rewrite the factorial function using a `for` loop.
 pub fn factorial(n: u32) -> u32 {
-    todo!()
+    // todo!()
+    let mut num = 1;
+    if n>1{
+    for i in 1..=n{
+        num = num * i;
+        println!("i的值是{}",i)
+    }
+    return num;
+    }else {
+        1
+    }
 }
 
 #[cfg(test)]

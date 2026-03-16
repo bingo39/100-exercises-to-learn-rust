@@ -24,7 +24,8 @@ mod tests {
         // We want it to wrap around instead
         assert_eq!(factorial(20), 2_192_834_560);
         //                           ☝️
-        // A large number literal using underscores to improve readability!
+        // A large number literal using underscores to improve readability! 
+        // 使用下划线来提高大额数字的可读性
     }
 
     #[test]

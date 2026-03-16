@@ -4,7 +4,21 @@ pub fn factorial(n: u32) -> u32 {
     // interprets as "I'll get back to this later", thus
     // suppressing type errors.
     // It panics at runtime.
-    todo!()
+    // 删除todo宏
+    let mut sum = 1;
+    let mut i=n;
+    while i>1 {
+        sum = sum * i;
+       println!("n的阶乘：{}",sum);
+       i=i-1;
+    }
+    if sum > 1{
+        sum
+    }else {
+        1
+    }
+    
+
 }
 
 #[cfg(test)]

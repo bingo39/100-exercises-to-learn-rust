@@ -2,6 +2,9 @@
 //   Make sure to enforce the same validation rules you have in `Ticket::new`!
 //   Even better, extract that logic and reuse it in both places. You can use
 //   private functions or private static methods for that.
+// 确保实施与`Ticket:：new`中相同的验证规则！甚至更好，验提取该逻辑并在两个地方重用。你可以使用私有函数或私有静态方法
+
+use std::char::decode_utf16;
 
 pub struct Ticket {
     title: String,
@@ -10,22 +13,33 @@ pub struct Ticket {
 }
 
 impl Ticket {
-    pub fn new(title: String, description: String, status: String) -> Ticket {
-        if title.is_empty() {
+    // 私有验证方法（考察点！）
+        fn valid_title(title: &str){
+            if title.is_empty() {
             panic!("Title cannot be empty");
         }
         if title.len() > 50 {
             panic!("Title cannot be longer than 50 bytes");
         }
-        if description.is_empty() {
+        }
+        fn valid_description(description: &str){
+            if description.is_empty() {
             panic!("Description cannot be empty");
         }
         if description.len() > 500 {
             panic!("Description cannot be longer than 500 bytes");
         }
-        if status != "To-Do" && status != "In Progress" && status != "Done" {
+        }
+        fn vaild_status(status:&str){
+            if status != "To-Do" && status != "In Progress" && status != "Done" {
             panic!("Only `To-Do`, `In Progress`, and `Done` statuses are allowed");
         }
+        }
+    pub fn new(title: String, description: String, status: String) -> Ticket {
+        // 在new中复用
+        Ticket::valid_title(&title);
+        Ticket::valid_description(&description);
+        Ticket::vaild_status(&status);
 
         Ticket {
             title,
@@ -33,6 +47,22 @@ impl Ticket {
             status,
         }
     }
+
+
+        // setter （&mut self）
+        pub fn set_title(&mut self,title: String){
+            Ticket::valid_title(&title);
+            self.title = title
+        }
+        pub fn set_description(&mut self,description: String){
+            Ticket::valid_description(&description);    
+            self.description = description
+        }
+        pub fn set_status(&mut self,status:String){
+            Ticket::vaild_status(&status);
+            self.status = status
+        }
+
 
     pub fn title(&self) -> &String {
         &self.title
