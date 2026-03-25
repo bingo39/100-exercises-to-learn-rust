@@ -34,7 +34,7 @@ impl Ticket {
             if status != "To-Do" && status != "In Progress" && status != "Done" {
             panic!("Only `To-Do`, `In Progress`, and `Done` statuses are allowed");
         }
-        }
+    }
     pub fn new(title: String, description: String, status: String) -> Ticket {
         // 在new中复用
         Ticket::valid_title(&title);
