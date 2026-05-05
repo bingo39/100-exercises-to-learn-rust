@@ -4,8 +4,9 @@
 //  Look at the compiler error to get familiar with what it looks like.
 //  Then delete the code below and move on to the next exercise.
 
-impl PartialEq for u32 {
-    fn eq(&self, _other: &Self) -> bool {
-        todo!()
-    }
-}
+// 理解orphan_rule规则即可：不能同时满足两个条件，trait和类型都来自外部crate
+// impl PartialEq for u32 {
+//     fn eq(&self, _other: &Self) -> bool {
+
+//     }
+// }
