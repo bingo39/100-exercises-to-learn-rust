@@ -1,4 +1,5 @@
 // TODO: A (derivable) trait implementation is missing for this exercise to compile successfully.
+/*缺少派生宏，要求补充以便测试通过（例如，assert_eq!(ticket1, ticket2);）*/
 //   Fix it!
 //
 // # `Debug` primer
@@ -8,7 +9,8 @@
 // print both sides of the comparison to the terminal.
 // If the compared type doesn't implement `Debug`, it doesn't know how to represent them!
 
-#[derive(PartialEq)]
+#[derive(PartialEq,Debug)]
+// assert_eq! & assert_ne! 相较 assert 多了print!，所以还要补充`#[derive(Debug)]`派生宏
 struct Ticket {
     title: String,
     description: String,

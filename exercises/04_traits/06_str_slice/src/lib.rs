@@ -7,7 +7,7 @@ pub struct Ticket {
 }
 
 impl Ticket {
-    pub fn new(title: String, description: String, status: String) -> Ticket {
+    pub fn new(title:String, description: String, status: String) -> Ticket {
         if title.is_empty() {
             panic!("Title cannot be empty");
         }
@@ -31,15 +31,16 @@ impl Ticket {
         }
     }
 
-    pub fn title(&self) -> &String {
+    // Rust 会自动把 &String 转换成 &str
+    pub fn title(&self) -> &str {
         &self.title
     }
 
-    pub fn description(&self) -> &String {
+    pub fn description(&self) -> &str {
         &self.description
     }
 
-    pub fn status(&self) -> &String {
+    pub fn status(&self) -> &str {
         &self.status
     }
 }
