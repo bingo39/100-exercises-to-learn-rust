@@ -25,7 +25,7 @@ impl Ticket {
         if description.is_empty() {
             panic!("Description cannot be empty");
         }
-        if description.len() > 500 {
+        if description.len() > 500{
             panic!("Description cannot be longer than 500 bytes");
         }
 
@@ -36,7 +36,18 @@ impl Ticket {
         }
     }
     pub fn assigned_to(&self) -> Option<&String> {
-        todo!()
+        /*
+        对比写法：
+        if let Status::InProgress { assigned_to } = &self.status{
+            assigned_to
+        } else {
+            panic!("Only `In-Progress` tickets can be assigned to someone")
+        }
+         */
+       match &self.status{
+        Status::InProgress { assigned_to } => Some(assigned_to),
+        _=>None,
+       }
     }
 }
 

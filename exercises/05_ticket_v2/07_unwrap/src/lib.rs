@@ -2,8 +2,47 @@
 //   When the description is invalid, instead, it should use a default description:
 //   "Description not provided".
 fn easy_ticket(title: String, description: String, status: Status) -> Ticket {
-    todo!()
+   // todo!()
+  if title.is_empty() || title.len()>50{
+    Ticket::new(title, description, status).unwrap()
+  }else if description.is_empty()|| description.len()>500{
+      Ticket::new(
+            title,
+            "Description not provided".to_string(),
+            status,
+        )
+        .unwrap()
+  } else {
+      Ticket::new(title, description, status).unwrap()
+  }
+
 }
+/*
+1.简便写法：
+fn easy_ticket(title: String, description: String, status: Status) -> Ticket {
+  let description = if description.is_empty()|| description.len()>500{
+          "Description not provided".to_string()  
+  }else{
+       description 
+  }；
+Ticket::new(title, description, status).unwrap()
+}
+2.显示处理
+fn easy_ticket(title: String, description: String, status: Status) -> Ticket {
+  match Ticket::new(title.clone(), description, status.clone()){
+    Ok(ticket) => ticket;
+    Err(error) => {
+         if error.contains("Description") {
+            Ticket::new(title, "Description not provided".to_string(), status).unwrap()
+    }else{
+       panic!("{}", error);
+    }
+  }
+  }；
+  补充：
+  contains() 是 String 的标准库方法，error是String
+  error.contains("Description") 的逻辑就是：错误信息里带 "Description" → 说明是描述的问题 → 用默认值替代；否则 → 是标题的问题 → panic。
+*/
 
 #[derive(Debug, PartialEq, Clone)]
 struct Ticket {
