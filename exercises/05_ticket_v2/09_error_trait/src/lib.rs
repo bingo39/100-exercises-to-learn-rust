@@ -3,18 +3,47 @@
 //  The docs for the `std::fmt` module are a good place to start and look for examples:
 //  https://doc.rust-lang.org/std/fmt/index.html#write
 
+use std::fmt;
+use std::error::Error;
+
+#[derive(Debug)]
 enum TicketNewError {
     TitleError(String),
     DescriptionError(String),
 }
+
+// Display 手动实现
+impl fmt::Display for TicketNewError{
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        match self{
+            TicketNewError::TitleError(msg)=>write!(f, "{msg}"),
+            TicketNewError::DescriptionError(msg) => write!(f,"{msg}"),
+        }
+    }
+}
+
+// Error空实现
+/*  Error本身定义就是空实现：pub trait Error: Debug + Display {}
+TicketNewError满足了这个实习，所以可以直接for*/
+impl Error for TicketNewError {}
 
 // TODO: `easy_ticket` should panic when the title is invalid, using the error message
 //   stored inside the relevant variant of the `TicketNewError` enum.
 //   When the description is invalid, instead, it should use a default description:
 //   "Description not provided".
 fn easy_ticket(title: String, description: String, status: Status) -> Ticket {
-    todo!()
-}
+   // todo!()
+   let description  = if description.is_empty() || description.len()>500{
+    "Description not provided".to_string()
+   }else{
+    description
+   };
+   match Ticket::new(title,description,status){
+    Ok(Ticket) =>Ticket,
+    Err(TicketNewError::TitleError(msg))=> panic!("{msg}"),
+    // 执行不到这一步，但rust中match还是要求循环所有的可能性
+    Err(TicketNewError::DescriptionError(mfff))=>panic!("{mfff}")
+   }}
 
 #[derive(Debug, PartialEq, Clone)]
 struct Ticket {

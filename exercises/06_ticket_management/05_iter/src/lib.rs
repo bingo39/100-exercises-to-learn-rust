@@ -5,6 +5,15 @@ use ticket_fields::{TicketDescription, TicketTitle};
 // Hint: just like in the previous exercise, you want to delegate the iteration to
 //   the `Vec<Ticket>` field in `TicketStore`. Look at the standard library documentation
 //   for `Vec` to find the right type to return from `iter`.
+
+/*
+TODO: 提供一个 `iter` 方法，返回一个对 `&Ticket` 项的迭代器。
+提示：和上一个练习一样，你应该把迭代委托给`TicketStore` 中的 `Vec<Ticket>` 字段（tickets字段才对）
+查阅标准库文档中 `Vec` 的部分，找出 `iter` 应该返回的正确类型。
+
+文档：大多数集合都提供 .iter()方法，该方法返回一个迭代器，用于遍历集合的元素引用
+ */
+
 #[derive(Clone)]
 pub struct TicketStore {
     tickets: Vec<Ticket>,
@@ -33,6 +42,10 @@ impl TicketStore {
 
     pub fn add_ticket(&mut self, ticket: Ticket) {
         self.tickets.push(ticket);
+    }
+
+    pub fn iter(&self)->std::slice::Iter<Ticket>{
+        self.tickets.iter()
     }
 }
 

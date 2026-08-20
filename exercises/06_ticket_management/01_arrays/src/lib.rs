@@ -1,9 +1,10 @@
 // TODO: Flesh out the `WeekTemperatures` struct and its method implementations to pass the tests.
 
 pub struct WeekTemperatures {
-    // TODO
+    temperatures:[Option<i32>;7]
 }
 
+#[derive(Copy,Clone)]
 pub enum Weekday {
     Monday,
     Tuesday,
@@ -14,17 +15,34 @@ pub enum Weekday {
     Sunday,
 }
 
+/*
+`#[derive(Copy,Clone)]`实现的部分：
+impl Weekday{
+    fn as_index(&self)->usize {
+        match self {
+            Weekday::Monday => 0,
+            Weekday::Tuesday => 1,
+            Weekday::Wednesday => 2,
+            ......          
+        }
+    }
+}
+ */
+
 impl WeekTemperatures {
     pub fn new() -> Self {
-        todo!()
+        WeekTemperatures{
+            //[None; 7] 是 Rust 的重复初始化语法：[值; 数量]，7 个 None 一行搞定
+            temperatures:[None;7]
+        }
     }
 
     pub fn get_temperature(&self, day: Weekday) -> Option<i32> {
-        todo!()
+        self.temperatures[day as usize]
     }
 
     pub fn set_temperature(&mut self, day: Weekday, temperature: i32) {
-        todo!()
+        self.temperatures[day as usize] = Some(temperature)
     }
 }
 

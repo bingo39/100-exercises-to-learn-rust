@@ -3,13 +3,32 @@
 //   a `String` field into each variant.
 //   You'll also have to add `thiserror` as a dependency in the `Cargo.toml` file.
 
+use thiserror::Error;
+#[derive(Error,Debug)]
 enum TicketNewError {
+    //thiserror 把手写的 Display + Error 实现压缩成一行注解
+    #[error("Title cannot be empty")]
     TitleCannotBeEmpty,
+    #[error("Title cannot be longer than 50 bytes")]
     TitleTooLong,
+    #[error("Description cannot be empty")]
     DescriptionCannotBeEmpty,
+    #[error("Description cannot be longer than 500 bytes")]
     DescriptionTooLong,
 }
-
+/*
+补充：
+如果要实现 #[error("固定字符串")]
+例如：#[derive(Error, Debug)]
+enum TicketNewError {
+    #[error("{0}")]
+    TitleError(String),     // 0号字段 = String
+ 
+    #[error("{0}")]
+    DescriptionError(String), // 0号字段 = String
+}
+需要    
+变体得携带数据，即枚举要携带数据*/
 #[derive(Debug, PartialEq, Clone)]
 struct Ticket {
     title: String,
@@ -24,6 +43,7 @@ enum Status {
     Done,
 }
 
+// 实现TicketNewError trait
 impl Ticket {
     pub fn new(
         title: String,

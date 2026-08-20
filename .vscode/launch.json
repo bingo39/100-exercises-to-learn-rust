@@ -1,0 +1,1325 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug unit tests in library 'welcome_00'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=welcome_00"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'syntax'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=syntax"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'intro_01'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=intro_01"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'integers'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=integers"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'variables'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=variables"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'if_else'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=if_else"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'panics'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=panics"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'factorial'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=factorial"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'while_'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=while_"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'for_'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=for_"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'overflow'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=overflow"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'saturating'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=saturating"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'as_cast'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=as_cast"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'intro_02'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=intro_02"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'struct_'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=struct_"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'validation'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=validation"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'common'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=common"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'modules'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=modules"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'visibility'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=visibility"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'encapsulation'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=encapsulation"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'ownership'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=ownership"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'setters'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=setters"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'stack'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=stack"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'heap'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=heap"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'references_in_memory'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=references_in_memory"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'destructor'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=destructor"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'outro_02'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=outro_02"
+                ]
+            }
+        },
+        {
+            "name": "Debug integration test 'integration'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--test=integration",
+                    "--package=outro_02"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'intro_03'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=intro_03"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'trait_'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=trait_"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'orphan'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=orphan"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'overloading'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=overloading"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'derives'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=derives"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'trait_bounds'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=trait_bounds"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'str_slice'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=str_slice"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'deref'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=deref"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'sized'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=sized"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'from'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=from"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'assoc_vs_generic'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=assoc_vs_generic"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'clone'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=clone"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'copy'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=copy"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'drop'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=drop"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'outro_03'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=outro_03"
+                ]
+            }
+        },
+        {
+            "name": "Debug integration test 'integration'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--test=integration",
+                    "--package=outro_03"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'intro_04'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=intro_04"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'enum_'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=enum_"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'match_'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=match_"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'variants_with_data'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=variants_with_data"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'if_let'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=if_let"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'nullability'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=nullability"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'fallibility'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=fallibility"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'unwrap'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=unwrap"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'error_enums'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=error_enums"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'error_trait'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=error_trait"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'packages'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=packages"
+                ]
+            }
+        },
+        {
+            "name": "Debug executable 'packages'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=packages",
+                    "--package=packages"
+                ]
+            },
+            "args": []
+        },
+        {
+            "name": "Debug unit tests in executable 'packages'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--bin=packages",
+                    "--package=packages"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'deps'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=deps"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'thiserror_'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=thiserror_"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'tryfrom'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=tryfrom"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'source'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=source"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'outro_04'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=outro_04"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'intro_05'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=intro_05"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'arrays'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=arrays"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'vec'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=vec"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'resizing'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=resizing"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'iterators'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=iterators"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'ticket_fields'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=ticket_fields"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'iter'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=iter"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'lifetime'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=lifetime"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'combinators'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=combinators"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'impl_trait'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=impl_trait"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'impl_trait_2'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=impl_trait_2"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'slice'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=slice"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'mut_slice'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=mut_slice"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'two_states'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=two_states"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'index'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=index"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'index_mut'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=index_mut"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'hashmap'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=hashmap"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'btreemap'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=btreemap"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'intro_07'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=intro_07"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'threads'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=threads"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'static'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=static"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'leaking'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=leaking"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'scoped_threads'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=scoped_threads"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'channels'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=channels"
+                ]
+            }
+        },
+        {
+            "name": "Debug integration test 'insert'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--test=insert",
+                    "--package=channels"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'interior_mutability'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=interior_mutability"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'response'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=response"
+                ]
+            }
+        },
+        {
+            "name": "Debug integration test 'insert'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--test=insert",
+                    "--package=response"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'client'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=client"
+                ]
+            }
+        },
+        {
+            "name": "Debug integration test 'insert'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--test=insert",
+                    "--package=client"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'bounded'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=bounded"
+                ]
+            }
+        },
+        {
+            "name": "Debug integration test 'insert'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--test=insert",
+                    "--package=bounded"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'patch'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=patch"
+                ]
+            }
+        },
+        {
+            "name": "Debug integration test 'check'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--test=check",
+                    "--package=patch"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'locks'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=locks"
+                ]
+            }
+        },
+        {
+            "name": "Debug integration test 'check'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--test=check",
+                    "--package=locks"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'rwlock'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=rwlock"
+                ]
+            }
+        },
+        {
+            "name": "Debug integration test 'check'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--test=check",
+                    "--package=rwlock"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'without_channels'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=without_channels"
+                ]
+            }
+        },
+        {
+            "name": "Debug integration test 'check'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--test=check",
+                    "--package=without_channels"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'sync'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=sync"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'intro_08'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=intro_08"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'async_fn'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=async_fn"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'spawn'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=spawn"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'runtime'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=runtime"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'future'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=future"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'blocking'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=blocking"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'async_locks'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=async_locks"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'cancellation'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=cancellation"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'outro_08'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=outro_08"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'mdbook_exercise_linker'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=mdbook-exercise-linker"
+                ]
+            }
+        },
+        {
+            "name": "Debug executable 'mdbook-exercise-linker'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=mdbook-exercise-linker",
+                    "--package=mdbook-exercise-linker"
+                ]
+            },
+            "args": []
+        },
+        {
+            "name": "Debug unit tests in executable 'mdbook-exercise-linker'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--bin=mdbook-exercise-linker",
+                    "--package=mdbook-exercise-linker"
+                ]
+            }
+        },
+        {
+            "name": "Debug unit tests in library 'mdbook_link_shortener'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--package=mdbook-link-shortener"
+                ]
+            }
+        },
+        {
+            "name": "Debug executable 'mdbook-link-shortener'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=mdbook-link-shortener",
+                    "--package=mdbook-link-shortener"
+                ]
+            },
+            "args": []
+        },
+        {
+            "name": "Debug unit tests in executable 'mdbook-link-shortener'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--bin=mdbook-link-shortener",
+                    "--package=mdbook-link-shortener"
+                ]
+            }
+        }
+    ]
+}
