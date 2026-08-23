@@ -56,6 +56,9 @@ impl IntoIterator for  TicketStore{
     type Item = Ticket;
     type IntoIter = std::vec::IntoIter<Ticket>;
     fn into_iter(self) -> Self::IntoIter {
+        //解释注释部分内容:
+        // 实现的是 TicketStore 的迭代，但迭代逻辑得让内部的 Vec 来干——所以必须先访问 self.tickets，再调它的 into_iter
+        // 假如：TicketStore::into_iter，就是调用实现的into_iter,即无限调用自己
         self.tickets.into_iter()
     }
 }
